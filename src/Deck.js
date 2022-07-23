@@ -1,6 +1,5 @@
 
-import FrenteCarta from './FrenteCarta'
-
+import FrenteCarta from './FrenteCarta';
 const cartas = [
     {
         pergunta: "O que é JSX?",
@@ -21,8 +20,19 @@ const cartas = [
     {
         pergunta: "O ReactDOM nos ajuda __ ",
         resposta: "interagindo com a DOM para colocar componentes React na mesma"
+    },
+    {
+        pergunta: " Usamos o npm para __  ",
+        resposta: "gerenciar os pacotes necessários e suas dependências"
+    },
+    {
+        pergunta: "Usamos props para __ ",
+        resposta: "passar diferentes informações para componentes"
+    },
+    {
+        pergunta: "Usamos estado (state) para __ ",
+        resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
     }
-    
        
     ]
 
@@ -30,10 +40,11 @@ export default function Deck() {
 
     let numero = 1;
     let deck = cartas.length;
-
+    let sortearCartas = cartas.sort(()=>Math.random()-0.5);
+    let sortidas = sortearCartas.slice(4);
     return (
         <>
-            {cartas.map(props => <FrenteCarta pergunta={props.pergunta} resposta={props.resposta} num={numero++} deck={deck} />)}
+            {sortidas.map(props => <FrenteCarta  pergunta={props.pergunta} resposta={props.resposta} num={numero++} deck={deck} />)}
            
         </>
     )
