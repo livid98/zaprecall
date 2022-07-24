@@ -39,9 +39,9 @@ const cartas = [
 export default function Deck() {
 
     let numero = 1;
-    let deck = cartas.length;
     let sortearCartas = cartas.sort(()=>Math.random()-0.5);
     let sortidas = sortearCartas.slice(4);
+    let deck = sortidas.length;
     return (
         <>
             {sortidas.map(props => <FrenteCarta  pergunta={props.pergunta} resposta={props.resposta} num={numero++} deck={deck} />)}

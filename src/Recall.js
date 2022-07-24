@@ -1,4 +1,5 @@
 import Deck from './Deck';
+import Baixo from './Baixo';
 export default function Recall(){
     return (
      <div className="tela2">
@@ -10,7 +11,10 @@ export default function Recall(){
       ZapRecall
       </div>
      </div>
+     <div className='conteudo'>
      <Deck/>
+     </div>
+     <Baixo/>
      </div>
     );
     
