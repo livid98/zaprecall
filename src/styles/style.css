@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import "./reset.css";
 * {
     box-sizing: border-box;
   }
@@ -108,10 +109,11 @@ body{background-color: #FB6B6B;
 
 
 
-.flashcard img{
-    width: 15px;
-    height: 18px;
+.flashcard ion-icon[name="play-outline"]{
+   
     margin-left: 120px;
+    color:black;
+    font-size: 30px;
 }
 
 .pergunta{width: 300px;
@@ -224,3 +226,39 @@ body{background-color: #FB6B6B;
     margin-left: 5px;
     cursor: pointer;
 }
+
+ion-icon[name="close-circle"] {
+    color: #FF3030;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+ion-icon[name="help-circle"] {
+    color: #FF922E;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+ion-icon[name="checkmark-circle"] {
+    color: #2FBE34;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+.flashcard .Nlembrei {
+    color: #FF3030;
+    text-decoration-line: line-through;
+    
+}
+
+.flashcard .QuaseNlembrei {
+    color: #FF922E;
+    text-decoration-line: line-through;
+    
+}
+
+.flashcard .Zap {
+    color: #2FBE34;
+    text-decoration-line: line-through;
+}
+

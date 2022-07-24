@@ -8,7 +8,7 @@ export default function Pergunta(props){
        <div>{props.pergunta}</div>
        <img src="Vector2.png" alt="imgtrascarta" onClick={() => verResposta(!pergunta)}  />
      </div>
-     </> : <Resposta resposta={props.resposta}/>
+     </> : <Resposta resposta={props.resposta}  pergunta={props.pergunta} num={props.num}  deck={props.deck}/>
     );
     
     }

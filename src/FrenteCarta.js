@@ -9,9 +9,9 @@ return ( fechada ?
 <>
 <div className="flashcard" onClick={() => fechar(!fechada)}>
 <p>Pergunta {props.num}</p>
-<img src="Vector.png" alt="imgfrentecarta"/>
+<ion-icon name="play-outline"></ion-icon>
 </div>
-</> : <Pergunta pergunta={props.pergunta}  resposta={props.resposta} />
+</> : <Pergunta pergunta={props.pergunta}  resposta={props.resposta} num={props.num} deck={props.deck}/>
 );
 
 }
