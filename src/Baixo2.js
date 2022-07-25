@@ -30,21 +30,22 @@ function HtmlIcon(resposta) {
 function HtmlFooter(score) {
     array = [...array,score.icon];
     return (
-        <div className=".baixo2">
-
-                {array.map(resposta => <HtmlIcon icon={resposta} />)}
+        <footer className="baixo2">
+                <h1>{(score.score)}/{(score.deck)}-CONCLUÍDOS</h1>
+                <div className="icons">
+                {array.map((resposta,index) => <HtmlIcon icon={resposta} key={index}/>)}
+                </div>
         
-            <h1>{(score.score)}/{(score.deck)}-CONCLUÍDOS</h1>
-        </div>
+        </footer>
     )
 }
 
 export default function Footer(props) {
-    score = score + 1;
+    score++;
     if(props.icon === "1"){
         errado = true;
     }
-    if(score <= props.deck){
+    if(score < props.deck){
         return (
             <HtmlFooter score={score} deck={props.deck} icon={props.icon}/>
         )

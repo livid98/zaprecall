@@ -3,7 +3,7 @@ export default function Baixo(props){
     return (
      <> 
      <div className="baixo">
-       <p> 0/{props.deck} concluídas </p>
+       <h1> 0/{props.deck} concluídas </h1>
      </div>
      </>  
     );
