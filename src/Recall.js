@@ -14,7 +14,6 @@ export default function Recall(){
      <div className='conteudo'>
      <Deck/>
      </div>
-     <Baixo/>
      </div>
     );
     

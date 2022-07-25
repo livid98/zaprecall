@@ -1,4 +1,3 @@
-
 export default function Baixo(props){
     console.log(props.deck)
     return (
